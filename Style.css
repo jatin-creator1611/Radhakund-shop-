@@ -1,0 +1,512 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05f0dc;
+   padding: 12px 10px;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#home {
+    padding-top: 90px;
+}
+
+h2 {
+    color: #ff8c00 !important;
+}
+
+/* Logo + Name */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-area h1 {
+    color: white;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+/* Hero / Welcome Section */
+div.hero-details {
+    background: linear-gradient(to bottom, #fffaf3, #ffe9d6);
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Text */
+.hero-details p {
+    color: #b34700;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*
+/* Subtitle */
+.hero-details .subtitle {
+    color: #444;
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(12, 200, 224);
+    transform: scale(1.05);
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/*welcome whatsapp button*/
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #25D366;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/*old code here*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h2,
+p {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #a47148, #d4a373, #a47148);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: rgb(248, 240, 240);
+    text-align: center;
+    font-weight: bolder;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+ul li a:hover {
+    background-color: #FFD700;
+}
+
+
+
+
+/* Shop */
+.logo-text span {
+    color: #f1c40f;
+    ;
+}
+
+/* Hero section   spiritual item text*/
+p {
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    text-align: left;
+}
+
+div.hero-details {
+    background-color: rgba(229, 253, 6, 0.918);
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Blink animation define karna */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Blink animation define karna */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Hero details ke andar ke p tag par animation apply karna */
+.hero-details p {
+    animation: blinker 1s linear infinite;
+    color: #f70909;
+    text-align: center;
+    font-size: 42px;
+}
+
+/* Container jo text ko hold karega */
+.marquee-container {
+    width: 100%;
+    /* Pure container ki width lele */
+    overflow: hidden;
+    /* Bahar ka content hide kare */
+    background: #e5f63d;
+    /* Aapki image ke background se matched */
+    padding: 15px 0;
+    /* Thoda upar niche se space */
+    border-bottom: 2px solid white;
+    /* Optional border */
+    display: flex;
+    /* Alignment ke liye zaroori */
+    justify-content: center;
+    /* Pehle center mein dekhe, baad mein scroll kare */
+    align-items: center;
+}
+
+
+/* Container styling */
+.products {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* Grid Logic: 1 row mein 5 columns */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 barabar columns */
+    gap: 20px;
+    /* Images ke beech ka gap */
+}
+
+/* Har item ka box */
+.product-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    /* Image bahar na nikle zoom hone par */
+}
+
+/* Image styling */
+.product-item img {
+    width: 100%;
+    height: 200px;
+    /* Sabhi images ki height ek jaisi rahegi */
+    object-fit: cover;
+    /* Image khrab nahi dikhegi */
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    /* Zoom animation speed */
+}
+
+/* Name styling */
+.product-item p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* --- HOVER EFFECTS --- */
+
+/* 1. Poora Card thoda upar uthega */
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. Image Zoom hogi */
+.product-item:hover img {
+    transform: scale(1.1);
+    /* 10% zoom */
+}
+
+/* 3. Text ka color badlega */
+.product-item:hover p {
+    color: #eb0909;
+}
+
+/* Responsive: Mobile par 2 images dikhengi taki ganda na lage */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Products */
+.products {
+    padding: 40px 5%;
+    text-align: left;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.video-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 300px;
+    max-width: 100%;
+}
+
+
+/* Gallery Section */
+.Gallery {
+    text-align: center;
+    /* Heading ko center karega */
+    padding: 40px 20px;
+}
+
+.Gallery h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Videos Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    /* Videos center me */
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Mobile me next line me aa jayenge */
+}
+
+/* Video Style */
+.video-container video {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.products p {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.Contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.Contact h2 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+/* Links Style */
+.Contact a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.Contact a:hover {
+    color: #ff6600;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #ff9800;
+    color: white !important;
+}
+
+.button:hover {
+    background: #e68900;
+}
+
+/* WhatsApp Icon */
+.order-now::before {
+    content: "📱 ";
+    font-size: 22px;
+}
+
+/* Instagram Icon */
+.fa-instagram {
+    color: #E1306C;
+    font-size: 22px;
+    margin-right: 6px;
+}
+
+/* YouTube Icon */
+.youtube-icon {
+    width: 38px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+/* Call Icon */
+.Contact a[href^="tel"]::before {
+    content: "📞 ";
+    font-size: 22px;
+}
+
+
+
+/* About Us Section */
+.About {
+    padding: 60px 25px;
+    background: linear-gradient(to bottom, #fffaf3, #ffe9d6);
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Headings */
+.About h2 {
+    font-size: 34px;
+    color: #b34700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Paragraph Styling */
+.About p {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 2;
+    color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+/* Bold Highlight */
+.About b {
+    color: #e67e22;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .About h2 {
+        font-size: 26px;
+    }
+
+    .About p {
+        font-size: 17px;
+        line-height: 1.7;
+        padding: 15px;
+    }
+}
+
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background: #1ebe5d;
+}
