@@ -64,11 +64,15 @@
 
     </div>
 
-
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search products... (Jaap Mala, Kanthi, etc.)">
+</div>
+<p id="noResult" style="display:none; text-align:center; color:red; font-weight:bold;">
+    No products found 😔
+</p>
 
     <section id="spiritual-items" class="products">
         <h2>Spiritual Items (Our Products)</h2>
-
         <div class="product-grid">
             <div class="product-item">
                 <img src="Image/Bag.webp" alt="Bead bag">
@@ -390,6 +394,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
-</body>
 
+<!--Java Script Here-->
+<script>
+const searchInput = document.getElementById("searchInput");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", function () {
+    let filter = searchInput.value.toLowerCase();
+    let products = document.querySelectorAll(".product-item");
+
+    let visibleCount = 0;
+
+    products.forEach(function (item) {
+        let text = item.innerText.toLowerCase();
+
+        if (text.includes(filter)) {
+            item.style.display = "block";
+            visibleCount++;
+        } else {
+            item.style.display = "none";
+        }
+    });
+
+    // Show/Hide "No Result"
+    if (visibleCount === 0) {
+        noResult.style.display = "block";
+    } else {
+        noResult.style.display = "none";
+    }
+});
+</script>
+
+</body>
 </html>
